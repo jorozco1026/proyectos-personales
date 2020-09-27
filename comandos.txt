@@ -10,11 +10,27 @@ para los comandnos
    git add archivo.ext
    git add .  (para todos los archivos del directorio al area temporal)
 
-5. Pasar del nivel temporal al nivel repositorio - cambia el color y adiciona la oparación M en cada commit se marca con un id referenciado, para su recuperacion
+5. Pasar del nivel temporal al nivel repositorio - cambia el color y adiciona la oparación M en cada commit se marca con un id referenciado, para su recuperacion. Cundo se aplica el commit desaparecen las marchas en los archivos y el color vuelve a norma, para reiniciar el proceso con add y commit nuevamente. el commit permite viajar en el tiempo
    git commit -m 'comentario nemotecnico a lo cambiado'
 
-git status -s (Ver archivos modificados)
-git log --oneline (ver todos los commits)
-git reflog (Ver todo el historial)
-git reset --hard 4487415 (Vamos al commit especificado borrando los cambios puedes volver viendo tu historial )
-git reset --hard (regresa al commit ultimo borrando los cambios no comitiados)
+6. Ver listado de cambios entre versionados entre los N commint aplicados
+   git log --oneline (ver todos los commits)
+
+7. git reflog (Ver todo el historial)
+
+8. Recuperar un versionado en cualquier orden
+   git reset --hard 4487415 (Vamos al commit especificado borrando los cambios puedes volver viendo tu historial )
+
+9. git reset --hard (regresa al commit ultimo borrando los cambios no comitiados)
+
+respaldar en la nube en HITHUB.COM
+https://github.com/
+usuario  jorozco1026
+clave    orozco1026
+
+NEW crear un repositorio
+publico
+la primera vez muestra comandos, ejecutar
+10. git remote add origin https://github.com/jorozco1026/proyectos-personales.git
+11. git push -u origin master
+lo cual indica que apartir de ahora seguira trabajando de forma remots
