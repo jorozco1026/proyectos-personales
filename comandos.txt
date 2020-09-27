@@ -1,4 +1,4 @@
-view - terminal
+view - terminal - git es como sacar un flash para hacerle seguimiento desde su creación hasta publicarlo
 para los comandnos
 1. git version
 
@@ -6,8 +6,13 @@ para los comandnos
 
 3. git status -s  (prefijo ?? sin seguimiento A adicionado M modificado)
 
-git add . (Agregar todo al area temporal)
-git commit -m 'comentario' (Agregar al repositorio local FOTO)
+4. para hacerle seguimiento se debe enviar al siguiente nivel que es el área local en la grafica, al ejecutar    status cambia a U por A
+   git add archivo.ext
+   git add .  (para todos los archivos del directorio al area temporal)
+
+5. Pasar del nivel temporal al nivel repositorio - cambia el color y adiciona la oparación M en cada commit se marca con un id referenciado, para su recuperacion
+   git commit -m 'comentario nemotecnico a lo cambiado'
+
 git status -s (Ver archivos modificados)
 git log --oneline (ver todos los commits)
 git reflog (Ver todo el historial)
